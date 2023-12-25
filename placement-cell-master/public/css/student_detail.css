@@ -1,0 +1,142 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0px;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 10px; /* Add margin-top to create space below the nav */
+    background-color: #6a929e; /* Set the background color to blue */
+    color: #e8ffff; /* Set the text color to white */
+  }
+  
+  h1, h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: hsla(213, 5%, 32%, 0.667);
+  }
+  
+  /* Styling specific elements within the table */
+  td strong {
+    font-weight: bold;
+  }
+  
+  /* Interview table styles */
+  .container:nth-child(2) h2 {
+    margin: 20px 0;
+  }
+  
+  /* Form styles */
+  .container:nth-child(3) form {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .container:nth-child(3) label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .container:nth-child(3) select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f7f7f7;
+    color: #333; /* Text color for the select options */
+  }
+  
+  /* Style the <option> elements */
+  .container:nth-child(3) select option {
+    padding: 10px;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  /* Style the submit button */
+  .container:nth-child(3) button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #0056b3; /* Darker blue for the button background */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .container:nth-child(3) button[type="submit"]:hover {
+    background-color: #007bff; /* Lighter blue on hover */
+  }
+  
+  #interview, #result {
+    width: 48%; /* Adjust the width of both select elements to fit on the same line */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f7f7f7;
+    color: #333; /* Text color for the select options */
+  }
+ 
+/* Style the <option> elements */
+#interview option, #result option {
+    padding: 10px;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  /* Style the submit button container */
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Style the submit button */
+  #saveButton {
+    padding: 10px 20px;
+    background-color: #0056b3; /* Darker blue for the button background */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #saveButton:hover {
+    background-color: #007bff; /* Lighter blue on hover */
+  }
+  
+  /* Additional styles as per requirement */
+  p {
+    margin: 10px 0;
+    text-align: center;
+    font-style: italic;
+    color: #888;
+  }

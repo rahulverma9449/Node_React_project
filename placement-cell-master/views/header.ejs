@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="/css/header.css">
+<nav class="main-navigation">
+  <ul class="left-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/interview/add">Interviews</a></li>
+    <li><a href="/student/add">Student</a></li>
+    <li><a href="/download/downloads">Report</a></li>
+  </ul>
+  <ul class="right-links">
+    <% if (locals.user){ %>
+    <li class="user-name"><%= user.name %></li>
+    <li><a href="/users/sign-out">Sign out</a></li>
+    <% } else { %>
+    <li><a href="/users/sign-in">Sign in</a></li>
+    <li><a href="/users/sign-up">Sign up</a></li>
+    <% } %>	
+  </ul>
+</nav>

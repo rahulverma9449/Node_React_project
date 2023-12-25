@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Details</title>
+  <link rel="stylesheet" href="/css/student_detail.css">
+</head>
+<body>
+  <div class="container">
+  <h1>Student Details</h1>
+  
+  <table>
+    <tr>
+      <th>Field</th>
+      <th>Value</th>
+    </tr>
+    <tr>
+      <td><strong>Name:</strong></td>
+      <td><%= student.name %></td>
+    </tr>
+    <tr>
+      <td><strong>Email:</strong></td>
+      <td><%= student.email %></td>
+    </tr>
+    <tr>
+      <td><strong>Batch:</strong></td>
+      <td><%= student.batch %></td>
+    </tr>
+    <tr>
+      <td><strong>College:</strong></td>
+      <td><%= student.college %></td>
+    </tr>
+    <tr>
+      <td><strong>DSA Score:</strong></td>
+      <td><%= student.dsaScore %></td>
+    </tr>
+    <tr>
+      <td><strong>WebD Score:</strong></td>
+      <td><%= student.webdScore %></td>
+    </tr>
+    <tr>
+      <td><strong>React Score:</strong></td>
+      <td><%= student.reactScore %></td>
+    </tr>
+    <tr>
+      <td><strong>Placement Status:</strong></td>
+      <td><%= student.placementStatus %></td> <!-- Display the placement status -->
+    </tr>
+   
+  </table>
+</div>
+<div class="container">
+  <h1>Interview Details</h1>
+  <% if (student.interviews.length > 0) { %>
+    <table>
+      <tr>
+        <th>Company</th>
+        <th>Date</th>
+        <th>Result</th>
+      </tr>
+      <% student.interviews.forEach(function(interview) { %>
+        <tr>
+          <td><%= interview.companyName %></td>
+          <td><%= interview.date ? interview.date.toDateString() : 'Not available' %></td>
+          <td><%= interview.result || 'Not available' %></td>
+        </tr>
+      <% }); %>
+    </table>
+  <% } else { %>
+    <p>No selected interview found.</p>
+  <% } %>
+</div>
+<div class="container">
+  <h1>Enrolled Student</h1>
+  <form action="/student/<%= student._id %>/select-interview" method="POST">
+    <div style="display: flex; justify-content: space-between;">
+      <div style="flex: 1;">
+        <label for="interview">Select Interview:</label>
+        <select id="interview" name="selectedInterview" required>
+          <% interviews.forEach(function(interview) { %>
+            <option value="<%= interview._id %>">
+              <%= interview.companyName %> - <%= interview.date ? interview.date.toDateString() : 'Not available' %>
+            </option>
+          <% }); %>
+        </select>
+      </div>
+      <div style="flex: 1; margin-left: 10px;">
+        <label for="result">Result:</label>
+        <select id="result" name="selectedInterviewResult" required>
+          <option value="Pass">Pass</option>
+          <option value="Failed">Failed</option>
+          <option value="On-Hold">On-Hold</option>
+        </select>
+      </div>
+    </div>
+
+    <button type="submit" id="saveButton">Enrolled</button>
+  </form>
+</div>
+
+
+</body>
+</html>

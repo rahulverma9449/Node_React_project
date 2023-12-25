@@ -1,0 +1,53 @@
+.main-navigation {
+    background-color: hsla(218, 93%, 17%, 0.667);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left-links,
+  .right-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .right-links {
+    justify-content: flex-end;
+  }
+  
+  .main-navigation ul li {
+    margin-left: 10px;
+  }
+  
+  .main-navigation ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .main-navigation ul li a:hover {
+    background-color: #ccc;
+    color: #fff;
+  }
+  
+  /* Additional styling for the "Sign out" and "Sign in" links */
+  .right-links li:nth-last-child(1) a,
+  .right-links li:nth-last-child(2) a {
+    background-color: #2980b9;
+    color: #fff;
+  }
+  
+  .right-links li:nth-last-child(1) a:hover,
+  .right-links li:nth-last-child(2) a:hover {
+    background-color: #2471a3;
+  }
+  /* header.css */
+  .user-name {
+    color: rgb(236, 236, 240);
+    font-weight: bold;
+    position: relative;
+    top: 10px; /* Adjust the value as needed */
+  }

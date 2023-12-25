@@ -1,0 +1,49 @@
+.student-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+  }
+  
+  .student-form h2 {
+    margin-top: 0;
+  }
+  
+  .student-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .student-form input,
+  .student-form select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .student-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .student-form button:hover {
+    background-color: #45a049;
+  }
+  
+  .styled-heading {
+    text-align: center;
+    color: #150339;
+    font-size: 36px;
+    font-family: "Arial", verdana;
+    text-transform: uppercase;
+    margin-top: 30px;
+  }
+  

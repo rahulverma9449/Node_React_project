@@ -1,0 +1,54 @@
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #b1b3bc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  font-size: 28x;
+}
+
+.container h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.container .toggle-interviews {
+  text-align: right;
+}
+
+.container div {
+  margin-bottom: 10px;
+}
+
+.container p {
+  margin: 0;
+}
+
+.container strong {
+  font-weight: bold;
+}
+
+.container a {
+  text-decoration: none;
+  color: #f7ffff;
+}
+
+.container a:hover {
+  text-decoration: underline;
+}
+
+.container hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.interview-container {
+  display: none;
+}

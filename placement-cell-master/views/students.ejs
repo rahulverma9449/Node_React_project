@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Students</title>
+  <link rel="stylesheet" href="/css/student.css">
+</head>
+<body>
+  <h1>Students</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Batch</th>
+        <!-- Add more table headings as needed -->
+      </tr>
+    </thead>
+    <tbody>
+      <% students.forEach(function(student) { %>
+        <tr>
+          <td><%= student.name %></td>
+          <td><%= student.email %></td>
+          <td><%= student.batch %></td>
+          <!-- Add more table cells as needed -->
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+</body>
+</html>
